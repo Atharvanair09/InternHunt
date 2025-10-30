@@ -1,0 +1,365 @@
+body {
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+  overflow-x: hidden;
+}
+
+.about-container {
+  position: relative;
+  z-index: 9;
+  color: white; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px;
+}
+
+.about-para {
+  font-family: "Instrument Serif";
+  padding-top: 10%;
+  padding-left: 2%;
+  font-size: 2.5rem;
+  font-weight: 300;
+  width: 350px;
+  margin: 0;
+  color: #ffffff;
+}
+
+.project-title {
+  /* margin-top: -2%; */
+  margin-left:0.75%;
+  font-size: 26rem;
+  color: #ffffff;
+  letter-spacing: 10px;
+  font-family: "Times New Roman";
+}
+
+.internship-options-section {
+  font-family: Instrument Serif;
+  padding: 40px 20px;
+  text-align: center;
+  max-width: 1700px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.internship-options-header {
+  margin-bottom: 50px;
+  transform: translateY(30px);
+}
+
+.internship-options-header h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.internship-options-header h1 span {
+  color: #5b42f3; /* Blue color for emphasis */
+}
+
+.internship-options-header p {
+  font-size: 1.75rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Card Container */
+.options-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap; 
+}
+
+.option-card {
+  background-color: #fff;
+  border: 1px solid #040303;
+  border-radius: 12px;
+  padding: 30px;
+  width: 500px;
+  height: 600px;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s, opacity 0.8s ease-out;
+  position: relative; /* For the popular tag */
+  margin-top: 20px;
+}
+
+.option-card.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.option-card:nth-child(1).animate-in {
+  transition-delay: 0.1s;
+}
+
+.option-card:nth-child(2).animate-in {
+  transition-delay: 0.3s;
+}
+
+.option-card:nth-child(3).animate-in {
+  transition-delay: 0.5s;
+}
+
+.option-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.option-card h2 {
+  font-size: 3rem;
+  color: #333;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.option-card .duration {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #1a73e8; /* Blue color for duration in standard card */
+  margin-bottom: 20px;
+}
+
+.option-card:not(.most-popular) .duration {
+  color: #4a4a4a; /* Slightly darker for non-popular cards */
+}
+
+.option-card .description {
+  font-size: 1.25rem;
+  color: #555;
+  margin-bottom: 25px;
+  line-height: 1.5;
+  min-height: 75px; /* Ensures descriptions align visually */
+}
+
+/* Icon Styling */
+.icon-placeholder {
+  background-color: #f7f7f7;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.icon-placeholder svg {
+  width: 24px;
+  height: 24px;
+  color: #1a73e8; /* Icon color */
+}
+
+/* Features List */
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.features-list li {
+  font-size: 1.1rem;
+  color: #333;
+  /* margin-bottom: 10px; */
+  display: flex;
+  align-items: center;
+}
+
+.check-icon {
+  color: #34a853; /* Google Green for checkmark */
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 1.1rem;
+}
+
+/* Most Popular Card Specific Styling */
+.most-popular {
+  border-color: #1a73e8; /* Blue border */
+  box-shadow: 0 10px 30px rgba(26, 115, 232, 0.2);
+  /* Increase size slightly to match the image */
+  transform: scale(1.05); 
+  z-index: 10; /* Ensure it overlaps others if necessary */
+}
+
+.most-popular:hover {
+  transform: scale(1.05) translateY(-5px); /* Maintain scale on hover */
+}
+
+/* Most Popular Tag */
+.popular-tag {
+  position: absolute;
+  top: -20px; /* Move it outside the card */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #1a73e8; /* Blue background */
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.most-popular .icon-placeholder {
+  background-color: #e8f0fe; /* Lighter blue background for icon */
+}
+
+/* Responsive Design */
+@media (max-width: 1400px) {
+  .about-para {
+    font-size: 2rem;
+    width: 300px;
+  }
+  
+  .project-title {
+    font-size: 20rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .option-card {
+    width: 45%; /* Two cards per row */
+    height: auto; /* Allow height to adjust based on content */
+  }
+  
+  .about-para {
+    font-size: 1.8rem;
+    width: 280px;
+  }
+  
+  .project-title {
+    font-size: 18rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-para {
+    font-size: 1.6rem;
+    width: 250px;
+    padding-top: 15%;
+  }
+  
+  .project-title {
+    font-size: 15rem;
+  }
+  
+  .option-card {
+    width: 100%; /* Single card per row on tablets */
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .options-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    padding: 20px;
+  }
+  
+  .about-para {
+    font-size: 1.4rem;
+    width: 100%;
+    padding-top: 20%;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .project-title {
+    font-size: 12rem;
+    margin-left: 0;
+    text-align: center;
+  }
+  
+  .option-card {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    padding: 20px;
+  }
+  
+  .option-card h2 {
+    font-size: 2.5rem;
+  }
+  
+  .option-card .duration {
+    font-size: 1.5rem;
+  }
+  
+  .option-card .description {
+    font-size: 1.1rem;
+  }
+  
+  .internship-options-header h1 {
+    font-size: 3.5rem;
+  }
+
+  .internship-options-header p {
+    font-size: 1.25rem;
+  }
+  
+  .internship-options-section {
+    padding: 20px 10px;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-para {
+    font-size: 1.2rem;
+    width: 100%;
+    padding-top: 25%;
+    padding-left: 0;
+  }
+
+  .project-title {
+    font-size: 8rem;
+    margin-left: 0;
+    letter-spacing: 3px;
+  }
+  
+  .option-card {
+    width: 100%;
+    max-width: 300px;
+    padding: 15px;
+  }
+  
+  .option-card h2 {
+    font-size: 2rem;
+  }
+  
+  .option-card .duration {
+    font-size: 1.3rem;
+  }
+  
+  .option-card .description {
+    font-size: 1rem;
+  }
+
+  .internship-options-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .internship-options-header p {
+    font-size: 1rem;
+  }
+  
+  .internship-options-section {
+    padding: 15px 5px;
+  }
+}
+
+/* End of AboutUs.css */

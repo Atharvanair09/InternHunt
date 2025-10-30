@@ -1,0 +1,155 @@
+/* Container for entire MentorList page */
+.mentorListPage {
+  margin-top: 100px;
+  min-height: 100vh;
+  background: #fefeff;
+}
+
+/* Main content wrapper */
+.mentorListMain {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 32px 16px;
+}
+
+/* Header section with title and subtitle */
+.mentorListHeader {
+  margin-bottom: 24px;
+}
+
+.mentorListTitle {
+  font-size: 5rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.mentorListSubtitle {
+  color: #6b7280;
+  font-size: 1.5rem;
+}
+
+/* Grid container for mentor cards with responsive columns */
+.mentorGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 30px;
+}
+
+/* Individual mentor card */
+.mentorCard {
+  background: #fff;
+  border: 1px solid #4a4444;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 600px;
+}
+
+/* Mentor avatar circle */
+.mentorAvatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #2563eb;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 32px;
+  margin: 0 auto 12px;
+}
+
+/* Mentor name and roles */
+.mentorName {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.mentorRole {
+  color: #374151;
+  margin-top: 4px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.mentorCompany {
+  color: #6b7280;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 2px;
+}
+
+/* Expertise section */
+.mentorExpertiseContainer {
+  margin-top: 8px;
+}
+
+.mentorExpertiseTitle {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+}
+
+.mentorExpertiseList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.mentorExpertiseItem {
+  border: 1px solid #e5e7eb;
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-size: 18px;
+  color: #374151;
+  background: #f9fafb;
+}
+
+/* Mentee and experience container */
+.mentorStats {
+  display: flex;
+  justify-content: space-between;
+  color: #6b7280;
+  font-size: 20px;
+  border-top: 1px solid #f1f5f9;
+  padding-top: 12px;
+  margin-top: 12px;
+}
+
+/* Button container */
+.mentorActionButtons {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+/* Contact button */
+.mentorContactButton {
+  flex: 1;
+  background: #2563eb;
+  color: #fff;
+  border: 0;
+  padding: 8px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* LinkedIn icon button */
+.mentorLinkedInLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  background: #eef2ff;
+  color: #2563eb;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}

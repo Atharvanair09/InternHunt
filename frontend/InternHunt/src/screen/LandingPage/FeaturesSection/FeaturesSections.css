@@ -1,0 +1,213 @@
+:root {
+    --primary-color: #5b42f3;
+    --text-color: #1f1f1f;
+    --secondary-text-color: #6c757d;
+    --card-bg-color: #ffffff;
+    --background-color: #f8f9fa;
+}
+
+/* Base Container and Reset */
+.features-section-container {
+    padding: 40px 20px;
+    background-color: var(--background-color);
+    font-family: "Instrument Serif";
+    height: 100vh;
+}
+
+/* Header Section */
+.header-content {
+    text-align: center;
+    max-width: 1050px;
+    margin: 40px auto 50px;
+}
+
+.header-content h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    /* margin-bottom: 10px; */
+}
+
+.header-content h1 span {
+    color: var(--primary-color);
+}
+
+.header-content p {
+    font-size: 1.5rem;
+    color: var(--secondary-text-color);
+}
+
+/* Features Grid - The key layout part */
+.features-grid {
+    display: grid;
+    /* Creates 3 equal columns for desktop */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px; /* Spacing between cards */
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* Feature Card Styles */
+.feature-card {
+    background-color: var(--card-bg-color);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-card:hover {
+    transform: translateY(-3px);
+}
+
+/* Icon Styles */
+.icon-box {
+    width: 48px;
+    height: 48px;
+    background-color: #e0e0ff; /* Lighter background */
+    color: var(--primary-color);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--text-color);
+    letter-spacing: 1px;
+}
+
+.feature-card p {
+    font-size: 1.5em;
+    color: var(--secondary-text-color);
+    letter-spacing: 1px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .features-section-container {
+        padding: 30px 15px;
+    }
+    
+    .header-content h1 {
+        font-size: 5rem;
+    }
+    
+    .header-content p {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+        gap: 20px;
+    }
+    
+    .header-content h1 {
+        font-size: 4.5rem;
+    }
+    
+    .header-content p {
+        font-size: 1.2rem;
+    }
+    
+    .feature-card {
+        padding: 25px;
+        min-height: 280px;
+    }
+    
+    .feature-card h3 {
+        font-size: 1.5rem;
+    }
+    
+    .feature-card p {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .features-section-container {
+        padding: 25px 10px;
+        height: auto;
+    }
+    
+    .header-content {
+        margin: 30px auto 40px;
+    }
+    
+    .header-content h1 {
+        font-size: 3.5rem;
+    }
+    
+    .header-content p {
+        font-size: 1.1rem;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr; /* 1 column for mobile */
+        gap: 15px;
+        max-width: 500px;
+    }
+    
+    .feature-card {
+        padding: 20px;
+        min-height: 250px;
+    }
+    
+    .feature-card h3 {
+        font-size: 1.4rem;
+    }
+    
+    .feature-card p {
+        font-size: 1.2rem;
+    }
+    
+    .icon-box {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .features-section-container {
+        padding: 20px 5px;
+    }
+    
+    .header-content h1 {
+        font-size: 2.8rem;
+    }
+    
+    .header-content p {
+        font-size: 1rem;
+    }
+    
+    .feature-card {
+        padding: 15px;
+        min-height: 220px;
+    }
+    
+    .feature-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .feature-card p {
+        font-size: 1rem;
+    }
+    
+    .icon-box {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+}
+
+/* End of Features Section CSS */

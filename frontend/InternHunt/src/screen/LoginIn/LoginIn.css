@@ -1,0 +1,233 @@
+body {
+  font-family: 'Instrument Serif';
+}
+
+.login-container {
+  display: flex;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 100%;
+  margin: 40px;
+  animation: auth-fade-in-up 450ms ease-out both;
+}
+
+.login-form-wrapper {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 70px;
+  margin-bottom: 10px;
+}
+
+.login-welcome-text {
+  width: 800px;
+  font-size: 5rem;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: -2rem;
+  font-family: "Instrument Serif";
+}
+
+.login-subtitle {
+  font-size: 1.25rem;
+  color: #555;
+  /* margin-bottom: 30px; */
+  font-family: "Instrument Serif";
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.login-sub{
+  font-size: 1.5rem;
+  color: #555;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-family: "Instrument Serif";
+  letter-spacing: 1px;
+}
+
+.login-input-group {
+  margin-bottom: 20px;
+}
+
+.login-input-group label {
+  display: block;
+  font-size: 1.5rem;
+  color: #777;
+  margin-bottom: 8px;
+}
+
+.login-input-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 1.25rem;
+}
+
+.login-sign-in-button,
+.login-google-sign-in-button {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.login-sign-in-button {
+  background-color: #216a9c;
+  color: #fff;
+  padding: 15px;
+}
+
+.login-sign-in-button:hover {
+  background-color: #1a567e;
+}
+
+.login-google-sign-in-button {
+  background-color: #f0f0f0;
+  color: #444;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;  
+}
+
+.login-google-sign-in-button:hover {
+  background-color: #e0e0e0;
+}
+
+.login-google-icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.login-divider {
+  text-align: center;
+  margin: 20px 0;
+  position: relative;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.login-divider::before,
+.login-divider::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background-color: #ddd;
+}
+
+.login-divider::before {
+  left: 0;
+}
+
+.login-divider::after {
+  right: 0;
+}
+
+.login-signup-link {
+  color: #216a9c;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-signup-link:hover {
+  text-decoration: underline;
+}
+
+.login-image-wrapper {
+  width: 1000px;
+  height: 940px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  overflow: hidden;
+  border-radius: 30px;  
+}
+
+.login-office-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.radio-inputs1 {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 0.5rem;
+  background-color: #352f2f;
+  box-sizing: border-box;
+  box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+  padding: 0.25rem;
+  width: 800px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.radio-inputs1 .radio1 {
+  flex: 1 1 auto;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.radio-inputs1 .radio1 input {
+  display: none;
+}
+
+.radio-inputs1 .radio1 .name {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  border: none;
+  padding: .5rem 0;
+  color: rgb(255, 255, 255);
+  transition: all .5s ease-in-out;
+}
+
+.radio-inputs1 .radio1 input:checked + .name {
+  background-color: #fff;
+  font-weight: 600;
+  color: black;
+}
+
+@keyframes auth-fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .login-image-wrapper {
+    display: none; /* Hide the image on smaller screens */
+  }
+}

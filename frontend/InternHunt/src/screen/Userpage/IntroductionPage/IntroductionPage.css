@@ -1,0 +1,673 @@
+.introduction-main-container {
+  overflow: hidden;
+  /* background: #2a7b9b;
+  background: linear-gradient(
+    90deg,
+    rgba(42, 123, 155, 1) 0%,
+    rgba(87, 199, 133, 1) 50%,
+    rgba(237, 221, 83, 1) 100%
+  ); */
+}
+
+.introduction-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  animation: intro-fade-up 600ms ease-out both;
+}
+
+.welcome-container {
+  display: flex;
+  animation: intro-fade-up 800ms ease-out both;
+  width: 900px;
+  height: 100vh;
+  /* padding-top: 5rem; */
+}
+
+.introduction-title {
+  font-size: 8rem;
+  font-weight: 100;
+  display: flex;
+  text-align: center;
+}
+
+.welcome-image {
+  background-color: #575151;
+  width: 900px;
+  height: 820px;
+  border-radius: 15px;
+  margin-top: 170px;
+  margin-left: 100px;
+}
+
+.welcome-container-2 {
+  display: flex;
+  flex-direction: row;
+  margin-left: 806px;
+  margin-top: -280px;
+  animation: intro-fade-up 1000ms ease-out both;
+}
+
+.introduction-title-1 {
+  width: 100px;
+  font-size: 8rem;
+  margin-top: 60px;
+  font-weight: 100;
+  margin-left: 200px;
+  margin-right: 640px;
+}
+
+.search-introduction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+@keyframes intro-fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.curvy-line {
+  position: absolute;
+  height: 100%;
+  width: 500px;
+  margin-left: 50px;
+  z-index: 10;
+}
+
+.curvy-line path {
+  stroke: #4a4747;
+  stroke-width: 1px;
+  fill: none;
+  stroke-dasharray: none;
+  stroke-dashoffset: 0;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 32px;
+}
+
+.left-side {
+  align-items: flex-end;
+  padding-right: 3rem;
+}
+
+.right-side {
+  align-items: flex-start;
+  padding-left: 3rem;
+}
+
+.text-block {
+  text-align: right;
+  width: 100%;
+}
+
+.text-block1 {
+  margin-bottom: 35rem;
+  text-align: right;
+  width: 100%;
+}
+
+.right-side .text-block {
+  text-align: left;
+}
+
+.text-block h2 {
+  font-size: 3.5rem;
+  font-weight: 200;
+  margin: 0 0 0.5rem 0;
+  cursor: pointer;
+  transition: 0.2s all ease-in;
+}
+
+.text-block1 h2 {
+  font-size: 3.5rem;
+  font-weight: 200;
+  margin: 0 0 0.5rem 0;
+  cursor: pointer;
+  transition: 0.2s all ease-in;
+}
+
+.text-block h2:hover {
+  color: bisque;
+}
+
+.text-block1 h2:hover {
+  color: bisque;
+}
+
+.left-side .text-block:nth-child(2) h2 {
+  margin-right: 70px;
+}
+
+.line1 {
+  width: 65%;
+  margin-left: 370px;
+  height: 3px;
+  background-color: #a0a0a0;
+}
+
+.line2 {
+  width: 95%;
+  margin-left: 30px;
+  height: 3px;
+  background-color: #a0a0a0;
+}
+
+.line3 {
+  width: 60%;
+  margin-left: -70px;
+  height: 3px;
+  background-color: #a0a0a0;
+}
+
+.current-hot-projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: -100px;
+  height: 100vh;
+  padding: 20px;
+}
+
+.current-project-title {
+  font-size: 7rem;
+  font-weight: 300;
+  margin-bottom: -200px;
+}
+
+.project-image {
+  position: relative;
+  width: 1400px;
+  height: 600px;
+  background-color: #575151;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.project-details {
+  position: absolute;
+  left: 43%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  max-width: 1500px;
+  padding: -20px;
+  box-sizing: border-box;
+}
+
+.project-title1 {
+  font-family: "Instrument Serif";
+  font-size: 7rem;
+  font-weight: 200;
+  margin-bottom: 20px;
+  line-height: 1;
+  color: rgb(0, 0, 0);
+  margin-left: -1px;
+}
+
+.project-description {
+  font-family: "Instrument Serif";
+  font-size: 2rem;
+  line-height: 1.5;
+  color: #000000;
+  margin-bottom: 20px;
+  position: absolute;
+  width: 900px;
+  top: 150px;
+  margin-top: 50px;
+}
+
+.animated-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 16px 36px;
+  border: 4px solid;
+  border-color: transparent;
+  font-size: 16px;
+  background-color: inherit;
+  border-radius: 100px;
+  font-weight: 600;
+  color: rgb(108, 57, 176);
+  box-shadow: 0 0 0 2px rgb(108, 57, 176);
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  margin-top: 190px;
+  border: none;
+  width: 150px;
+}
+
+.animated-button svg {
+  position: absolute;
+  width: 24px;
+  fill: rgb(108, 57, 176);
+  z-index: 9;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+  right: 16px;
+}
+
+.animated-button .arr-2 {
+  left: -25%;
+}
+
+.animated-button .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: rgb(108, 57, 176);
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .text {
+  position: relative;
+  z-index: 1;
+  transform: translateX(-12px);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  font-family: "Instrument Serif";
+}
+
+.animated-button:hover {
+  box-shadow: 0 0 0 12px transparent;
+  color: #ffffff;
+  border-radius: 12px;
+}
+
+.animated-button:hover .arr-1 {
+  right: -25%;
+}
+
+.animated-button:hover .arr-2 {
+  left: 16px;
+}
+
+.animated-button:hover .text {
+  transform: translateX(12px);
+}
+
+.animated-button:hover svg {
+  fill: #212121;
+}
+
+.animated-button:active {
+  scale: 0.95;
+  box-shadow: 0 0 0 4px rgb(108, 57, 176);
+}
+
+.animated-button:hover .circle {
+  width: 220px;
+  height: 220px;
+  opacity: 1;
+}
+
+.check-projects-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.check-projects-title {
+  font-size: 14rem;
+  font-weight: 200;
+  cursor: pointer;
+  transition: 0.2s all ease-in;
+}
+
+.check-projects-title:hover {
+  color: bisque;
+}
+
+.library-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  min-height: 100vh;
+  font-family: "Instrument Serif", sans-serif;
+  color: #333;
+  transition: 0.2s all ease-in;
+}
+
+/* Hot projects accordion row */
+.hot-accordion-row {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+.hot-accordion-item {
+  width: 260px;
+}
+
+.library-title {
+  font-size: 5rem;
+  font-weight: 200;
+  margin-bottom: 2rem;
+}
+
+.card-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: auto auto;
+}
+
+.main-card {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  min-height: 800px;
+  background-color: #d3d3d3;
+  border-radius: 12px;
+  background-image: url("/images/library1.png");
+  background-size: cover;
+  transition: 0.2s all ease-in-out;
+}
+
+.main-card:hover{
+  box-shadow: 1px 1px 10px 10px rgb(113, 108, 108);
+  cursor: pointer;
+}
+
+.small-card {
+  min-height: 242.5px;
+  background-color: #d3d3d3;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: 0.2s all ease-in-out;
+}
+
+.small-card:hover{  
+  box-shadow: 1px 1px 10px 10px rgb(113, 108, 108);
+  cursor: pointer;
+}
+
+.small-card:nth-child(2) {
+  background-image: url("/images/library2.png");
+  background-size: cover;
+}
+
+.small-card:nth-child(3) {
+  background-image: url("/images/library3.png");
+  background-size: cover;
+}
+
+.small-card:nth-child(4) {
+  background-image: url("/images/library4.png");
+  background-size: cover;
+}
+
+.small-card:nth-child(5) {
+  background-image: url("/images/library5.png");
+  background-size: cover;
+}
+
+.overlay-text1 {
+  position: absolute;
+  width: 47.3%;
+  height: 25%;
+  margin-top: 34rem;
+  background: #9ba5aea3;  
+  color: white;
+  padding: 6px 18px;
+  border-radius: 6px;
+  z-index: 2;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.1);
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-text2 {
+  position: absolute;
+  width: 23.6%;
+  height: 15%;
+  margin-top: 14.7rem;
+  background: #9ba5aea3;  
+  color: white;
+  padding: 6px 18px;
+  border-radius: 6px;
+  z-index: 2;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.1);
+  font-size: 1.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive adjustments for a cleaner layout */
+@media (max-width: 1024px) {
+  .card-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+  }
+  .main-card {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+  .small-card:nth-child(2) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+  .small-card:nth-child(3) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+  .small-card:nth-child(4) {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+  .small-card:nth-child(5) {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    gap: 1rem;
+  }
+  .main-card,
+  .small-card {
+    grid-column: 1 / 2;
+    grid-row: auto;
+    min-height: 250px;
+  }
+}
+
+
+/* Review Form */
+
+.review-form-container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.review-form-container h1{
+  font-size: 6rem;
+  font-weight: 300;
+  /* margin-bottom: 1.5rem; */
+}
+
+.review-form-container p{
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.review-form-container h1 span{
+  color: #5c67f2;
+}
+
+/* 2. Form Container Styling */
+#review-form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  height: 700px;
+  letter-spacing: 2px;
+}
+
+#review-form h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #5c67f2;
+  padding-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+/* 3. Input and Label Styling */
+#review-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+#review-form input[type="text"],
+#review-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 23px;
+}
+
+#review-form textarea {
+  resize: vertical;
+}
+
+/* 4. Star Rating Grouping */
+.form-group-rating {
+  margin-bottom: 20px;
+}
+
+/* 5. Star Rating Component Styles */
+.rating {
+  display: inline-flex;
+  align-items: center;
+  direction: rtl; 
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  display: inline-flex; 
+  cursor: pointer;
+  color: #ccc;
+  transition: color 0.3s;
+  /* Remove default label margin/padding if applied by framework */
+  margin: 0; 
+  padding: 0;
+}
+
+.rating label:before {
+  content: '\2605'; /* Unicode for a solid star */
+  font-size: 30px;
+  padding: 0 2px;
+
+}
+
+.rating input:checked ~ label,
+.rating label:hover,
+.rating label:hover ~ label {
+  color: #5c67f2 !important;
+  transition: color 0.3s;
+}
+
+/* 6. Submit Button Styling */
+#review-form button[type="submit"] {
+  background-color: #5c67f2;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+#review-form button[type="submit"]:hover {
+  background-color: #4a54e1;
+}
+
+/* Submission Success Message Styling */
+.review-success {
+  text-align: center;
+  padding: 40px;
+  background-color: #e6ffe6; /* Light green background */
+  border: 1px solid #c3e6cb;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.review-success h2 {
+  color: #155724;
+  font-size: 2em;
+}
+
+.review-success p {
+  margin-bottom: 20px;
+  color: #155724;
+}
+
+.review-success button {
+  background-color: #5c67f2;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}

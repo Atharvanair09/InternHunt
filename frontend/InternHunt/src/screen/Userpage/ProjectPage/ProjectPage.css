@@ -1,0 +1,457 @@
+body {
+  font-family: Instrument Serif, sans-serif;
+  margin: 0;
+}
+
+.pp-container {
+  display: flex;
+  max-width: 1400px;
+  margin: 100px auto;
+  gap: 20px;
+}
+
+.pp-main-content {
+  flex: 2;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border:  1px solid gray
+}
+
+.pp-sidebar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border:  1px solid gray;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.pp-card {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.pp-section {
+  margin-bottom: 30px;
+}
+
+/* Header */
+.pp-header {
+  margin-bottom: 30px;
+}
+
+.pp-back-button {
+  background: none;
+  border: none;
+  color: #007bff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.pp-project-title-section {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.pp-project-title-section h1 {
+  margin: 0 10px 0 0;
+  font-size: 3rem;
+}
+
+.pp-status-tag {
+  background-color: #e0f7fa;
+  color: #007bb6;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.pp-company-name {
+  color: #000000;
+  font-size: 1.75rem;
+  font-weight: 200;
+  margin-top: -1.25rem;
+  margin-bottom: -1.25rem;
+}
+
+.pp-about-project {
+  font-size: 1.5rem;
+}
+
+/* Skills You'll Learn */
+.pp-skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.pp-skills-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.pp-skill-tag {
+  background-color: #e9ecef;
+  color: #495057;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* Requirements */
+.pp-requirements-section {
+  margin-bottom: 30px;
+}
+
+.pp-requirements-section h2{
+  font-size: 1.5rem;
+}
+
+.pp-requirements-list {
+  list-style: none;
+  padding: 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.pp-requirements-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: -20px;
+  color: #000000;
+  font-size: 1.25rem;
+}
+
+.pp-requirement-icon {
+  color: #28a745;
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Project Info (Duration, Applicants, Start Date) */
+.pp-project-info-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 20px 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 30px;
+}
+
+.pp-info-item {
+  display: flex;
+  align-items: center;
+  color: #000000;
+  font-size: 22px;
+}
+
+.pp-info-icon {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+/* Mentor Card */
+.pp-mentor-card {
+  text-align: center;
+  border: 0.25px solid lightgray;
+  border-radius: 15px;
+  padding: 20px;
+  transition: 0.2s all ease-in;
+}
+
+.pp-mentor-card:hover{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+
+.pp-mentor-card h3 {
+  margin-bottom: 5px;
+  font-size: 1.95rem;
+}
+
+.pp-mentor-guidance {
+  color: #6c757d;
+  font-size: 23px;
+  margin-bottom: 20px;
+}
+
+.pp-mentor-details {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.pp-mentor-avatar {
+  width: 100px;
+  height: 100px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.pp-mentor-name {
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+  margin-right: 10px;
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+.pp-mentor-title {
+  color: #6c757d;
+  font-size: 18px;
+  margin-left: 23px;
+  text-align: left;
+}
+
+.pp-mentor-title1{
+  color: #000000;
+  font-size: 18px;
+  margin: 0;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.pp-contact-mentor-button {
+  background-color: #e6f2ff;
+  color: #007bff;
+  border: 1px solid #007bff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  transition: 0.2s all ease-in;
+}
+
+.pp-contact-mentor-button:hover {
+  background-color: #007bff;
+  color: #fff;
+
+}
+
+.pp-contact-mentor-button .pp-icon {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.horizontal-line {
+  margin-bottom: 50px;
+}
+
+/* Apply Now Card */
+.pp-apply-now-card {
+  text-align: center;
+  margin-top: -25px;
+  padding: 20px;
+  border-radius: 15px;
+  border: 0.25px solid lightgray;
+}
+
+.pp-apply-now-card:hover{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+
+.pp-apply-now-card h3 {
+  margin-bottom: 5px;
+  font-size: 1.95rem;
+}
+
+.pp-apply-text {
+  color: #6c757d;
+  font-size: 23px;
+  margin-bottom: 20px;
+}
+
+.pp-submit-application-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  /* font-weight: bold; */
+  width: 100%;
+  margin-bottom: 10px;
+  transition: 0.2s all ease-in;
+}
+
+.pp-submit-application-button:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+.pp-save-for-later-button {
+  background: none;
+  border: 1px solid #ced4da;
+  color: #495057;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  width: 100%;
+  transition: 0.2s all ease-in;
+}
+
+.pp-save-for-later-button:hover {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+/* Project Milestones */
+.pp-project-milestones-section {
+  margin-top: 30px;
+}
+
+.pp-project-milestones-section h2{
+    font-size: 1.5rem;
+}
+
+.pp-progress-text {
+  color: #6c757d;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.pp-overall-progress {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.pp-overall-progress p {
+  font-weight: bold;
+  margin: 0;
+  min-width: 120px;
+  font-size: 1.25rem;
+}
+
+.pp-progress-bar-container {
+  flex-grow: 1;
+  background-color: #e9ecef;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.pp-progress-bar {
+  height: 100%;
+  background-color: #007bff;
+  border-radius: 4px;
+  transition: width 0.5s ease-in-out;
+}
+
+.pp-progress-percentage {
+  font-weight: bold;
+  color: #007bff;
+  font-size: 1.25rem;
+}
+
+.pp-milestones-list {
+  list-style: none;
+  padding: 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.pp-milestones-list li {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pp-milestone-status-icon {
+  margin-right: 15px;
+  font-size: 20px;
+  color: #ced4da;
+}
+
+.pp-milestones-list li.pp-completed .pp-milestone-status-icon {
+  color: #28a745;
+}
+
+.pp-milestone-name { flex: 1 1 auto; }
+
+.pp-milestone-weeks {
+  margin-left: auto;
+  color: #6c757d;
+  font-size: 18px;
+}
+
+/* Application Status Styles */
+.pp-application-status {
+  text-align: center;
+  padding: 20px;
+}
+
+.pp-status-badge {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.pp-status-pending {
+  background-color: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeaa7;
+}
+
+.pp-status-approved {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.pp-status-rejected {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.pp-status-text {
+  color: #6c757d;
+  font-size: 14px;
+  margin: 0;
+}

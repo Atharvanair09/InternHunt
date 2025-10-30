@@ -1,0 +1,214 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Instrument Serif";
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  margin-top: 1.5rem;
+}
+
+.logo-container {
+  width: 200px;
+  height: 100px;
+  background-image: url("/public/images/logo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+ul {
+  display: flex;
+  gap: 30px;
+  padding: 1rem 2rem 1rem 2rem;
+  border:none;
+  border-radius: 10px;
+  background: rgba(117, 112, 112, 0.34); /* translucent white */
+  backdrop-filter: blur(10px); /* blurs background behind container */
+  -webkit-backdrop-filter: blur(10px); 
+}
+
+li {
+  display: flex;
+  text-align: center;
+  font-size: 1.75rem;
+  cursor: pointer;
+  font-weight: 200;
+  transition: 0.2s all ease-in;
+  color: #ffffff;
+  font-family: "Instrument Serif";
+  letter-spacing: 2px;
+}
+
+li:hover {
+  color: bisque;
+}
+
+.button {
+  width: 210px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  gap: 10px;    
+  background-color: rgb(161, 255, 20);
+  border-radius: 30px;
+  color: rgb(19, 19, 19);
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition-duration: 0.2s;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
+  padding-left: 8px;
+  transition-duration: 0.5s;
+  font-family: "Instrument Serif";
+  font-size:1.85rem;
+  margin-left: 10px;
+}
+
+.svgIcon {
+  height: 32px;
+  transition-duration: 1.5s;
+  margin-left: -10px;
+}
+
+.bell path {
+  fill: rgb(19, 19, 19);
+}
+
+.button:hover {
+  background-color: rgb(192, 255, 20);
+  transition-duration: 0.5s;
+}
+
+.button:active {
+  transform: scale(0.97);
+  transition-duration: 0.2s;
+}
+
+.button:hover .svgIcon {
+  transform: rotate(250deg);
+  transition-duration: 1.5s;
+}
+
+@media (max-width: 992px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  ul {
+    gap: 20px;
+    padding: 0.75rem 1.5rem;
+  }
+
+  li {
+    font-size: 1.6rem;
+  }
+
+  .button {
+    width: 200px;
+    height: 65px;
+    font-size: 1.6rem;
+  }
+
+  .svgIcon {
+    height: 28px;
+    margin-left: -8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding: 0 1rem;
+  }
+
+  ul {
+    flex-direction: row;
+    gap: 12px;
+    padding: 0.5rem 1rem;
+  }
+
+  li {
+    font-size: 1.3rem;
+  }
+
+  .button {
+    width: 160px;
+    height: 55px;
+    font-size: 1.3rem;
+  }
+
+  .svgIcon {
+    height: 22px;
+    margin-left: -5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-container {
+    width: 150px;
+    height: 75px;
+  }
+
+  ul {
+    gap: 10px;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  }
+
+  li {
+    font-size: 1.2rem;
+  }
+
+  .button {
+    width: 150px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+
+  .svgIcon {
+    height: 20px;
+    margin-left: -3px;
+  }
+}
+
+@media (max-width: 320px) {
+  .logo-container {
+    width: 120px;
+    height: 60px;
+  }
+
+  ul {
+    gap: 8px;
+    padding: 0.5rem 0.3rem 0.5rem 0.3rem;
+  }
+
+  li {
+    font-size: 1rem;
+  }
+
+  .button {
+    width: 120px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .svgIcon {
+    height: 16px;
+    margin-left: -2px;
+  }
+}
+
+/* End of file: Navbar.css */
